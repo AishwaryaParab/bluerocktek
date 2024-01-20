@@ -14,7 +14,7 @@ const Mission = () => {
         </motion.div>
 
         <motion.div initial={{transform: "translateX(100%)", filter: "blur(5px)"}} whileInView={{transform: "translateX(0)", filter: "blur(0)"}} viewport={{once: true}} className={styles.missionStatement}>
-          <p className={poppins.className}>At BLUEROCKTEK, our mission is to passionately create innovative and exceptional product designs that not only meet but exceed our customer's expectations. We are dedicated to understanding and anticipating the unique needs of our clients, collaborating closely with them to transform their ideas into aesthetically pleasing, functional, and market-leading solutions.</p>
+          <p className={poppins.className}>`At BLUEROCKTEK, our mission is to passionately create innovative and exceptional product designs that not only meet but exceed our customer&apos;s expectations. We are dedicated to understanding and anticipating the unique needs of our clients, collaborating closely with them to transform their ideas into aesthetically pleasing, functional, and market-leading solutions.`</p>
         </motion.div>
       </div>
 

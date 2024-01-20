@@ -1,9 +1,8 @@
-// import { Inter } from 'next/font/google'
 import './globals.css'
 import { inter } from '@/utils/fonts'
-import App from './App'
-
-// const inter = Inter({ subsets: ['latin'] })
+import Navbar from '@/components/navbar/Navbar'
+import Footer from '@/components/footer/Footer'
+import { ScrollProvider } from '@/context/ScrollContext'
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className='container'>
-          <App children={children} />
+          <ScrollProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </ScrollProvider>
         </div>
       </body>
     </html>
