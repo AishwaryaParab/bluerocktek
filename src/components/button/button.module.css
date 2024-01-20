@@ -1,0 +1,13 @@
+.container {
+    border-radius: 12px;
+    background: linear-gradient(95deg, #A4E9E8 3.55%, #02CECB 100%);
+    padding: 12px;
+    width: max-content;
+    cursor: pointer;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E1B1B;
+}

@@ -1,0 +1,22 @@
+.container {
+    padding: 50px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.underline {
+    margin-top: 5px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 60px;
+}

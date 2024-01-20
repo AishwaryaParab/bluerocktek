@@ -1,0 +1,65 @@
+.container {
+    padding: 0 50px 50px;
+}
+
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    transition: all 0.4s ease-in-out;
+}
+
+.missionTitle {
+    flex: 1;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.missionStatement {
+    flex: 1;
+    padding: 20px;
+    border-left: 0.5px solid #02CECB;
+}
+
+.missionStatement > p, .visionStatement > p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.vision {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.visionTitle {
+    flex: 1;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.visionStatement {
+    flex: 1;
+    padding: 20px;
+    border-right: 0.5px solid #02CECB;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #02CECB 59.05%, #D1FCFB 98.27%, #6BE5E3 98.27%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
