@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <div ref={servicesRef} className={styles.container}>
         <h2 className={`${styles.title} ${poppins.className}`}>Our Services</h2>
-        <Image className={styles.underline} src={underline} />
+        {/* <Image className={styles.underline} src={underline} /> */}
 
         <div className={styles.services}>
           {services.map(service => (

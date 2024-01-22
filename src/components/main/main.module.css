@@ -25,7 +25,7 @@
 }
 
 .headline h2 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     color: #FFFFFF;
     /* width: 540px; */
@@ -46,6 +46,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 80px;
 }
 
 .stats {
@@ -99,39 +100,84 @@
     opacity: 0.8;
 }
 
-@media(max-width: 1280px) {
+@media(max-width: 1226px) {
     .headline h2 {
+        font-size: 35px;
+    }
+    .gradient {
+        font-size: 70px;
+    }
+}
+
+@media(max-width: 1090px) {
+    .headline h2 {
+        font-size: 32px;
+    }
+    .gradient {
+        font-size: 62px;
+    }
+}
+
+@media(max-width: 1008px) {
+    .headline h2 {
+        font-size: 30px;
+    }
+    .gradient {
+        font-size: 55px;
+    }
+}
+
+@media(max-width: 971px) {
+    .headline h2 {
+        padding-left: 40px;
+    }
+}
+
+@media(max-width: 900px) {
+    .container {
+        padding-bottom: 0;
+    }
+    .headline h2 {
+        padding: 40px;
+        text-align: center;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .gradient {
         font-size: 50px;
     }
-    .main {
-        gap: 40px;
-    }
-    .radialGradient {
-        right: -5rem;
-    }
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 640px) {
     .headline h2 {
-        font-size: 40px;
+        padding: 40px 20px;
     }
-    .main {
-        gap: 30px;
-    }
-    .radialGradient {
-        width: 400px;
-        height: 400px;
-        right: 0;
-    }
-}
-
-
-@media(max-width: 992px) {
-    .main {
-        gap: 50px;
+    .gradient {
+        font-size: 45px;
     }
     .mainImg {
         width: 420px;
         height: 310px;
+    }
+}
+
+@media(max-width: 550px) {
+    .headline h2 {
+        font-size: 26px;
+    }
+    .gradient {
+        font-size: 40px;
+    }
+    .mainImg {
+        width: 380px;
+        height: 290px;
+    }
+}
+
+@media(max-width: 425px) {
+    .mainImg {
+        width: 310px;
+        height: 220px;
     }
 }

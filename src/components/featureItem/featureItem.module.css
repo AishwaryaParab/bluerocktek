@@ -39,3 +39,53 @@
     color: #A5A5A5;
     margin-top: 10px;
 }
+
+@media(max-width: 1190px) {
+    .content > p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1125px) {
+    .content > h3 {
+        font-size: 20px;
+    }
+    .content > p {
+        font-size: 15px;
+    }
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+    .img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media(max-width: 900px) {
+    .content > p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 780px) {
+    .container {
+        margin-top: 20px;
+    }
+    .content > h3 {
+        font-size: 22px;
+    }
+    .content > p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 640px) {
+    .content > h3 {
+        font-size: 20px;
+    }
+    .content > p {
+        font-size: 14px;
+    }
+}

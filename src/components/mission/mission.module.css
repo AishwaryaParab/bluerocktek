@@ -63,3 +63,53 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media(max-width: 1190px) {
+    .missionStatement > p, .visionStatement > p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1125px) {
+    .missionStatement > p, .visionStatement > p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 900px) {
+    .missionStatement > p, .visionStatement > p {
+        font-size: 14px;
+    }
+    .gradient {
+        font-size: 36px;
+    }
+    .missionTitle {
+        padding: 20px 20px 20px 0;
+    }
+    .missionStatement {
+        padding: 20px 0 20px 20px;
+    }
+    .visionTitle {
+        padding: 20px 0 20px 20px;
+    }
+    .visionStatement {
+        padding: 20px 20px 20px 0;
+    }
+}
+
+@media(max-width: 640px) {
+    .container {
+        padding: 20px 30px 50px 30px;
+    }
+    .mission, .vision {
+        flex-direction: column;
+    }
+    .visionStatement {
+        padding: 20px 0 20px 20px;
+        border-left: 0.5px solid #02CECB;
+        border-right: 0;
+    }
+    .missionTitle, .visionTitle {
+        margin-bottom: 15px;
+    }
+}

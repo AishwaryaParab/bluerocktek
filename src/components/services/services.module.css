@@ -6,6 +6,8 @@
     font-size: 30px;
     font-weight: 600;
     color: #FFFFFF;
+    border-bottom: 2px solid #02CECB;
+    width: max-content;
 }
 
 .underline {
@@ -19,4 +21,10 @@
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 60px;
+}
+
+@media(max-width: 640px) {
+    .container {
+        padding: 50px 30px;
+    }
 }

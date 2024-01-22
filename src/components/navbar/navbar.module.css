@@ -30,3 +30,24 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.hamburgerIcon {
+    color: #FFFFFF;
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .hamburgerIcon {
+        display: block;
+    }
+    .links {
+        display: none;
+    }
+}
+
+@media(max-width: 640px) {
+    .logoImg {
+        width: 220px;
+        height: 85px;
+    }
+}

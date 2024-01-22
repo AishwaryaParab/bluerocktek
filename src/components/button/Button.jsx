@@ -1,10 +1,11 @@
 import styles from "./button.module.css";
 
-const Button = ({label}) => {
+const Button = ({label, type}) => {
+
   return (
-    <div className={styles.container}>
+    <button type={label == "Submit" ? "submit" : "button"} className={styles.container}>
         <p className={styles.label}>{label}</p>
-    </div>
+    </button>
   )
 }
 
