@@ -6,11 +6,13 @@
 
 body {
   background-color: #1E1B1B;
+  min-width: 100vw;
 }
 
 .container {
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
+  overflow: hidden;
   /* background-color: #1E1B1B; */
 }
