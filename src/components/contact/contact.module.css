@@ -20,12 +20,23 @@
 }
 
 .contactForm {
-    flex: 1;
+    flex: 1.6;
 }
 
 .contactForm form {
     display: flex;
     flex-direction: column;
+}
+
+.name, .email {
+    display: flex;
+    gap: 15px;
+}
+
+.name > div, .email > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .label {
@@ -77,7 +88,7 @@
 }
 
 .contactImg {
-    transition: all 0.4s ease-in-out;
+    transition: all 1.2s ease-in-out;
     animation: move 2s infinite ease alternate;
 }
 
@@ -112,7 +123,7 @@
         height: 410px;
     }
     .contactForm textarea {
-        height: 350px;
+        height: 280px;
     }
     .contactDetails {
         gap: 20px;
@@ -129,7 +140,7 @@
     }
 }
 
-@media(max-width: 780px) {
+@media(max-width: 950px) {
     .contactForm {
         width: 100%;
     }
@@ -146,7 +157,7 @@
         height: 24px;
     }
     .detail {
-        font-size: 14px;
+        font-size: 16px;
         gap: 10px;
     }
     .label {
@@ -154,6 +165,12 @@
     }
     .detail > p {
         width: 90%;
+    }
+}
+
+@media(max-width: 780px) {
+    .detail {
+        font-size: 14px;
     }
 }
 
@@ -176,5 +193,12 @@
     }
     .contactDetails {
         flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {
+    .name, .email {
+        flex-direction: column;
+        gap: 0;
     }
 }

@@ -22,7 +22,7 @@ const Main = () => {
                 visible: {
                     scale: 1,
                     opacity: 1,
-                    transitionDelay: 0.4,
+                    transitionDelay: 1.2,
                     flex: 1
                 }
             }}>
@@ -41,7 +41,7 @@ const Main = () => {
                     visible: {
                         scale: 1,
                         opacity: 1,
-                        transitionDelay: 0.4
+                        transitionDelay: 1.2
                     }
                 }}>
                     <h2 className={poppins.className}><span className={styles.gradient}>Designing</span> the World we envision through <span className={styles.gradient}>Engineering</span></h2>

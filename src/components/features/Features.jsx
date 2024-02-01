@@ -25,7 +25,7 @@ const Features = () => {
 
           <motion.div initial={{transform: "translateX(100%)", filter: "blur(5px)"}} whileInView={{transform: "translateX(0)", filter: "blur(0)"}} viewport={{once: true}} className={styles.featureItems}>
             {features?.map(featureItem => (
-              <FeatureItem key={featureItem.id} icon={featureItem.icon} title={featureItem.title} desc={featureItem.desc} width={featureItem.width} height={featureItem.height} />
+              <FeatureItem key={featureItem.id} icon={featureItem.icon} title={featureItem.title} desc={featureItem.desc} width={featureItem.width} height={featureItem.height} mobileWidth={featureItem.mobileWidth} mobileHeight={featureItem.mobileHeight} />
             ))}
           </motion.div>
       </div>

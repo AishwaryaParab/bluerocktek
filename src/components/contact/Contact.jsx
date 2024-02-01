@@ -9,30 +9,61 @@ import { IoMail } from "react-icons/io5";
 import { poppins } from "@/utils/fonts";
 import { FaLocationDot } from "react-icons/fa6";
 import Button from "../button/Button";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { ScrollContext } from "@/context/ScrollContext";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const {contactRef} = useContext(ScrollContext);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY)
+      .then((result) => {
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <div ref={contactRef} className={styles.container}>
         <h2 className={`${styles.title} ${poppins.className}`}>Contact Us</h2>
         <div className={styles.contactDetails}>
             <motion.div initial={{transform: "translateX(-100%)", filter: "blur(5px)"}} whileInView={{transform: "translateX(0)", filter: "blur(0)"}} viewport={{once: true}} className={styles.contactForm}>
-                <form>
-                    <label className={styles.label}>Your name</label>
-                    <input className={`${styles.input} ${poppins.className}`} type="text" placeholder="Enter your name" required />
+                <form ref={form} onSubmit={(e) => {sendEmail(e)}}>
+                    <div className={styles.name}>
+                        <div>
+                            <label className={styles.label}>Name</label>
+                            <input className={`${styles.input} ${poppins.className}`} type="text" name="name" placeholder="Enter your name" required />
+                        </div>
 
-                    <label className={styles.label}>Your email</label>
-                    <input className={`${styles.input} ${poppins.className}`} type="email" placeholder="Enter your email" required />
+                        <div>
+                            <label className={styles.label}>Company Name</label>
+                            <input className={`${styles.input} ${poppins.className}`} type="text" name="company_name" placeholder="Enter your company name" required />
+                        </div>
+                    </div>
+
+                    <div className={styles.email}>
+                        <div>
+                            <label className={styles.label}>Email</label>
+                            <input className={`${styles.input} ${poppins.className}`} type="email" name="email" placeholder="Enter your email" required />
+                        </div>
+
+                        <div>
+                            <label className={styles.label}>Phone Number</label>
+                            <input className={`${styles.input} ${poppins.className}`} type="number" name="contact" placeholder="Enter your phone number" required />
+                        </div>
+                    </div>
 
                     <label className={styles.label}>Subject</label>
-                    <input className={`${styles.input} ${poppins.className}`} type="text" placeholder="Enter the subject" required />
+                    <input className={`${styles.input} ${poppins.className}`} type="text" name="subject" placeholder="Enter the subject" required />
 
-                    <label className={styles.label}>Your message (optional)</label>
-                    <textarea className={`${styles.input} ${poppins.className}`} rows={18} cols={18} type="text" placeholder="Enter your message" />
+                    <label className={styles.label}>Message (optional)</label>
+                    <textarea className={`${styles.input} ${poppins.className}`} rows={18} cols={18} type="text" name="message" placeholder="Enter your message" />
 
                     {/* <button type="submit">Submit</button> */}
                     <Button label="Submit" type="submit" />
@@ -40,7 +71,6 @@ const Contact = () => {
             </motion.div>
 
             <motion.div initial={{transform: "translateX(100%)", filter: "blur(5px)"}} whileInView={{transform: "translateX(0)", filter: "blur(0)"}} viewport={{once: true}} className={styles.details}>
-                {/* <Image src={logo} width={200} height={80} /> */}
                 <Image className={styles.contactImg} src={contact} width={500} height={500} />
 
                 <div className="address">

@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className={styles.container}>
         <div className={styles.navbar}>
             <motion.div initial="hidden" animate="visible" variants={{hidden: {transform: "translateX(-100%)", filter: "blur(5px)"}, visible: {transform: "translateX(0)", filter: "blur(0)"}}} className={styles.logo}>
-                <Image className={styles.logoImg} src={logo} width={280} height={100} />
+                <Image className={styles.logoImg} src={logo} width={260} height={48} />
             </motion.div>
 
             <motion.div initial="hidden" animate="visible" variants={{hidden: {transform: "translateX(100%)", filter: "blur(5px)"}, visible: {transform: "translateX(0)", filter: "blur(0)"}}} className={`${styles.links} ${poppins.className}`}>

@@ -1,9 +1,10 @@
 .container {
     padding: 10px 20px;
+    margin-top: 20px;
 }
 
 .logo {
-    transition: all 0.4s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 
 .navbar {
@@ -47,7 +48,7 @@
 
 @media(max-width: 640px) {
     .logoImg {
-        width: 220px;
-        height: 85px;
+        width: 200px;
+        height: 35px;
     }
 }
