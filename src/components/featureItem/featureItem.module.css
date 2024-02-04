@@ -34,16 +34,10 @@
 }
 
 .content > p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #A5A5A5;
     margin-top: 10px;
-}
-
-@media(max-width: 1190px) {
-    .content > p {
-        font-size: 16px;
-    }
 }
 
 @media(max-width: 1125px) {
