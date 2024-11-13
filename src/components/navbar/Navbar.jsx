@@ -45,7 +45,21 @@ const Navbar = () => {
   return (
     <div>
         <div ref={homeRef} className={styles.navbar}>
-            <motion.div initial="hidden" animate="visible" variants={{hidden: {transform: "translateX(-100%)", filter: "blur(5px)"}, visible: {transform: "translateX(0)", filter: "blur(0)"}}} className={styles.logo}>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {
+                  transform: "translateX(-100%)",
+                  filter: "blur(5px)"
+                },
+                visible: {
+                  transform: "translateX(0)",
+                  filter: "blur(0)"
+                }
+              }}
+              className={styles.logo}
+            >
                 <Image className={styles.logoImg} src={logo} width={260} height={48} />
             </motion.div>
 
