@@ -1,44 +1,46 @@
 .container {
-    border-radius: 12px;
-    background: linear-gradient(95deg, #A4E9E8 3.55%, #02CECB 100%);
-    padding: 12px;
-    width: max-content;
-    cursor: pointer;
-    border: none;
+  border-radius: 12px;
+  /* background: linear-gradient(95deg, #a4e9e8 3.55%, #02cecb 100%); */
+  background: linear-gradient(95deg, #e2c28d 3.55%, #f2a429 100%);
+  padding: 12px;
+  width: max-content;
+  cursor: pointer;
+  border: none;
 }
 
 .label {
+  font-size: 16px;
+  font-weight: 500;
+  /* color: #1e1b1b; */
+  color: #0a1f32;
+}
+
+@media (max-width: 1190px) {
+  .label {
     font-size: 16px;
-    font-weight: 500;
-    color: #1E1B1B;
+  }
 }
 
-@media(max-width: 1190px) {
-    .label {
-        font-size: 16px;
-    }
+@media (max-width: 1125px) {
+  .label {
+    font-size: 15px;
+  }
 }
 
-@media(max-width: 1125px) {
-    .label {
-        font-size: 15px;
-    }
+@media (max-width: 900px) {
+  .label {
+    font-size: 14px;
+  }
 }
 
-@media(max-width: 900px) {
-    .label {
-        font-size: 14px;
-    }
+@media (max-width: 780px) {
+  .label {
+    font-size: 15px;
+  }
 }
 
-@media(max-width: 780px) {
-    .label {
-        font-size: 15px;
-    }
-}
-
-@media(max-width: 640px) {
-    .label {
-        font-size: 14px;
-    }
+@media (max-width: 640px) {
+  .label {
+    font-size: 14px;
+  }
 }

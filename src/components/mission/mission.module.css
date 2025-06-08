@@ -1,115 +1,127 @@
 .container {
-    padding: 0 50px 50px;
+  padding: 0 50px 50px;
 }
 
 .mission {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #FFFFFF;
-    flex-wrap: wrap;
-    transition: all 1.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff0fd;
+  flex-wrap: wrap;
+  transition: all 1.2s ease-in-out;
 }
 
 .missionTitle {
-    flex: 1;
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  flex: 1;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .missionStatement {
-    flex: 1;
-    padding: 20px;
-    border-left: 0.5px solid #02CECB;
+  flex: 1;
+  padding: 20px;
+  border-left: 0.5px solid #f2a429;
 }
 
-.missionStatement > p, .visionStatement > p {
-    font-size: 18px;
-    font-weight: 300;
+.missionStatement > p,
+.visionStatement > p {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .vision {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #FFFFFF;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff0fd;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
 .visionTitle {
-    flex: 1;
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  flex: 1;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .visionStatement {
-    flex: 1;
-    padding: 20px;
-    border-right: 0.5px solid #02CECB;
+  flex: 1;
+  padding: 20px;
+  border-right: 0.5px solid #f2a429;
 }
 
 .gradient {
-    background: linear-gradient(90deg, #02CECB 59.05%, #D1FCFB 98.27%, #6BE5E3 98.27%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(90deg, #02CECB 59.05%, #D1FCFB 98.27%, #6BE5E3 98.27%); */
+  background: linear-gradient(
+    90deg,
+    #f2a429 59.05%,
+    #fee0b0 98.27%,
+    #f3b34c 98.27%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media(max-width: 1190px) {
-    .missionStatement > p, .visionStatement > p {
-        font-size: 16px;
-    }
+@media (max-width: 1190px) {
+  .missionStatement > p,
+  .visionStatement > p {
+    font-size: 16px;
+  }
 }
 
-@media(max-width: 1125px) {
-    .missionStatement > p, .visionStatement > p {
-        font-size: 15px;
-    }
+@media (max-width: 1125px) {
+  .missionStatement > p,
+  .visionStatement > p {
+    font-size: 15px;
+  }
 }
 
-@media(max-width: 900px) {
-    .missionStatement > p, .visionStatement > p {
-        font-size: 14px;
-    }
-    .gradient {
-        font-size: 36px;
-    }
-    .missionTitle {
-        padding: 20px 20px 20px 0;
-    }
-    .missionStatement {
-        padding: 20px 0 20px 20px;
-    }
-    .visionTitle {
-        padding: 20px 0 20px 20px;
-    }
-    .visionStatement {
-        padding: 20px 20px 20px 0;
-    }
+@media (max-width: 900px) {
+  .missionStatement > p,
+  .visionStatement > p {
+    font-size: 14px;
+  }
+  .gradient {
+    font-size: 36px;
+  }
+  .missionTitle {
+    padding: 20px 20px 20px 0;
+  }
+  .missionStatement {
+    padding: 20px 0 20px 20px;
+  }
+  .visionTitle {
+    padding: 20px 0 20px 20px;
+  }
+  .visionStatement {
+    padding: 20px 20px 20px 0;
+  }
 }
 
-@media(max-width: 640px) {
-    .container {
-        padding: 20px 30px 50px 30px;
-    }
-    .mission, .vision {
-        flex-direction: column;
-    }
-    .visionStatement {
-        padding: 20px 0 20px 20px;
-        border-left: 0.5px solid #02CECB;
-        border-right: 0;
-    }
-    .missionTitle, .visionTitle {
-        margin-bottom: 15px;
-    }
+@media (max-width: 640px) {
+  .container {
+    padding: 20px 30px 50px 30px;
+  }
+  .mission,
+  .vision {
+    flex-direction: column;
+  }
+  .visionStatement {
+    padding: 20px 0 20px 20px;
+    border-left: 0.5px solid #f2a429;
+    border-right: 0;
+  }
+  .missionTitle,
+  .visionTitle {
+    margin-bottom: 15px;
+  }
 }
