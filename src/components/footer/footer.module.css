@@ -1,5 +1,5 @@
 .container {
-    padding: 50px;
+  padding: 50px;
 }
 
 /* .contactDetails {
@@ -56,71 +56,72 @@
 } */
 
 .footerLinks ul {
-    display: flex;
-    flex-wrap: wrap;
-    color: #A5A5A5;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #a5a5a5;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .footerLinks ul li {
-    list-style: none;
-    cursor: pointer;
-    font-size: 14px;
-    text-decoration: underline;
+  list-style: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .footerLinks ul li:hover {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footerLinks a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #a5a5a5;
 }
 
 .copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #343232;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #343232;
 }
 
 .copyright > p {
-    color: #A5A5A5;
-    font-size: 12px;
+  color: #a5a5a5;
+  font-size: 12px;
 }
 
 .socials {
-    display: flex;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 50px 30px;
+  }
+  .footerLinks ul {
     gap: 20px;
-    align-items: center;
-    color: #FFFFFF;
+  }
 }
 
-@media(max-width: 640px) {
-    .container {
-        padding: 50px 30px;
-    }
-    .footerLinks ul {
-        gap: 20px;
-    }
+@media (max-width: 520px) {
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  .container {
+    padding: 20px 30px 50px 30px;
+  }
 }
 
-@media(max-width: 520px) {
-    .icon {
-        width: 16px;
-        height: 16px;
-    }
-    .container {
-        padding: 20px 30px 50px 30px;
-    }
-}
-
-@media(max-width: 300px) {
-    .footerLinks ul {
-        flex-direction: column;
-    }
+@media (max-width: 300px) {
+  .footerLinks ul {
+    flex-direction: column;
+  }
 }

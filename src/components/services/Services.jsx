@@ -10,20 +10,27 @@ import { useContext } from "react";
 import { ScrollContext } from "@/context/ScrollContext";
 
 const Services = () => {
-  const {servicesRef} = useContext(ScrollContext);
+  const { servicesRef } = useContext(ScrollContext);
 
   return (
     <div ref={servicesRef} className={styles.container}>
-        <h2 className={`${styles.title} ${poppins.className}`}>Our Services</h2>
-        {/* <Image className={styles.underline} src={underline} /> */}
+      <h2 className={`${styles.title} ${poppins.className}`}>Our Services</h2>
+      {/* <Image className={styles.underline} src={underline} /> */}
 
-        <div className={styles.services}>
-          {services.map(service => (
-            <Service key={service.id} name={service.name} desc={service.desc} image={service.image} />
-          ))}
-        </div>
+      <div className={styles.services}>
+        {services.map((service) => (
+          <Service
+            key={service.id}
+            name={service.name}
+            desc={service.desc}
+            image={service.image}
+            width={service.width}
+            height={service.height}
+          />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

@@ -1,5 +1,5 @@
 .container {
-  padding: 30px 20px 10px 20px;
+  padding: 30px 50px 20px 50px;
   /* position: fixed;
     top: 0; */
   background-color: transparent;
@@ -16,7 +16,7 @@
 }
 
 .navbar {
-  padding: 30px 20px 10px 20px;
+  padding: 30px 50px 20px 50px;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -91,6 +91,6 @@
 @media (max-width: 640px) {
   .logoImg {
     width: 200px;
-    height: 35px;
+    height: 70px;
   }
 }

@@ -6,34 +6,34 @@ import design from "../../public/product-design.png";
 import outsourcing from "../../public/outsourcing.png";
 
 export const features = [
-    {
-        id: 1,
-        icon: design,
-        title: "Product Design",
-        desc: "With the right design tools, methodologies, and a human-centered approach, we can build your products, to maximize your customer satisfaction.",
-        width: 48,
-        height: 48,
-        mobileWidth: 36,
-        mobileHeight: 36
-    },
-    {
-        id: 2,
-        icon: cad,
-        title: "CAD Services",
-        desc: "Creating seamless design communication channels across teams with comprehensive 3D products. Designs can also be validated by in house design checks, VAVE, FEM etc.",
-        width: 52,
-        height: 52,
-        mobileWidth: 40,
-        mobileHeight: 40
-    },
-    {
-        id: 3,
-        icon: outsourcing,
-        title: "Global Sourcing",
-        desc: "The team with its strategic thinking and proven quality procedures has successfully led and executed many international development projects.",
-        width: 48,
-        height: 48,
-        mobileWidth: 36,
-        mobileHeight: 36
-    },
-]
+  {
+    id: 1,
+    icon: design,
+    title: "Product Design",
+    desc: "With the right design tools, methodologies, and a human-centered approach, we can build your products, to maximize your customer satisfaction.",
+    width: 48,
+    height: 48,
+    mobileWidth: 36,
+    mobileHeight: 36,
+  },
+  {
+    id: 2,
+    icon: cad,
+    title: "CAD Services",
+    desc: "Creating seamless design communication channels across teams with comprehensive 3D products. Designs can also be validated by in house design checks, VAVE, FEM etc.",
+    width: 48,
+    height: 48,
+    mobileWidth: 38,
+    mobileHeight: 38,
+  },
+  {
+    id: 3,
+    icon: outsourcing,
+    title: "Global Sourcing",
+    desc: "The team with its strategic thinking and proven quality procedures has successfully led and executed many international development projects.",
+    width: 48,
+    height: 48,
+    mobileWidth: 36,
+    mobileHeight: 36,
+  },
+];

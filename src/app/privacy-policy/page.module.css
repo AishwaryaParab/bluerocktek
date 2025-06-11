@@ -1,0 +1,22 @@
+.container {
+  padding: 30px 50px;
+}
+
+.title {
+  color: #fff0fd;
+  margin: 10px 0;
+}
+
+.content {
+  color: #a5a5a5;
+}
+
+.link {
+  color: #fff0fd;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 20px;
+  color: #a5a5a5;
+}
